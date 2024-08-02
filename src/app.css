@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,
+body {
+    @apply h-screen w-screen;
+}
+
+input {
+    @apply border border-gray-400 rounded px-4 py-2;
+}
+
+a {
+    @apply text-accent hover:underline;
+}
+
+.error-box {
+    @apply text-red-500 bg-red-200 border border-red-300 p-2 rounded;
+}
+
+.warning-box {
+    @apply text-yellow-500 bg-yellow-200 border border-yellow-300 p-2 rounded;
+}
+
+.form-box {
+    @apply flex flex-col max-w-96 bg-gray-100 p-10 rounded border border-gray-200 gap-2;
+}
+
+.primary-btn {
+    @apply bg-accent rounded px-4 py-2 hover:bg-accent/90 text-white hover:no-underline;
+}
